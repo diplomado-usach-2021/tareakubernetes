@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: modulo-5
+  namespace: diplomado
+  labels:
+    app: nginx
+spec:
+  selector:
+    app: nginx
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
